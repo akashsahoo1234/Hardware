@@ -954,6 +954,46 @@ $(document).ready(function () {
         });
 
     };
+    function BreakdownHistoryLoad(slno, key) {
+        var url = 'LIST/breakdownhistorylist.php';
+        $.ajax({
+            url: url,
+            type: 'GET',
+            data: { slno: slno, key: key },
+            dataType: 'html',
+            success: function (data) {
+                var resultContainer = $('#breakdown-his-table');
+
+                resultContainer.empty();
+
+                resultContainer.append(data);
+            },
+            error: function () {
+                console.error('Error loading Breakdown data');
+            }
+        });
+
+    };
+    function InformationLoad(slno, key) {
+        var url = 'LIST/informationload.php';
+        $.ajax({
+            url: url,
+            type: 'GET',
+            data: { slno: slno, key: key },
+            dataType: 'html',
+            success: function (data) {
+                var resultContainer = $('#information-loading');
+
+                resultContainer.empty();
+
+                resultContainer.append(data);
+            },
+            error: function () {
+                console.error('Error loading Breakdown data');
+            }
+        });
+
+    };
     $('#sec9-check').on('click', function (e) {
         e.preventDefault();
         ke = Key;
@@ -990,6 +1030,18 @@ $(document).ready(function () {
         var sub = $("#sec13-product").val();
         AvailableTableLoad(sub, ke);
 
+    });
+    $('#sec21-submit').on('click', function (e) {
+        e.preventDefault();
+        ke = Key;
+        var slno = $("#sec21-sl").val();
+        if (slno == "") {
+            alert("Please Enter a Serial Number to Proceed");
+        }
+        else {
+            BreakdownHistoryLoad(slno, ke);
+            InformationLoad(slno, ke);
+        }
     });
     // Function to convert table data to CSV format
     function convertToCSV(table) {

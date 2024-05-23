@@ -774,127 +774,35 @@ if (isset($_GET['key'])) {
                 </section>
                 <section id="Section21" class="mx-4 rounded shadow">
                     <div class="row">
-                        <div class="col-md-3 bg-white p-3 rounded shadow " style="height:400px">
+                        <div class="col-md-3 bg-white p-3 rounded shadow " style="height:300px">
                                 <div class="form-group ">
                                     <label for="sec21-sl">Enter Machine Sl.No :</label>
-                                    <input type="text" class="form-control" id="sec21-sl">
+                                    <input type="text" class="form-control inputcap font-weight-bold" id="sec21-sl">
                                 </div>
                                 
                                 <button type="submit" class="btn btn-dark blacked mt-2" id="sec21-submit">Check</button>
-                                <div class="form-group mt-4">
-                                    <h3 class="text-danger">Breakdown Cases : 10</h3>
-                                    <h3 class="text-success">Breakdown Hours : 560</h3>
+                                <div class="form-group mt-4" id="information-loading">
                                 </div>
                         </div>
                         
                         <div class="col-md-8 bg-white p-3 rounded shadow mx-auto">
-                        <table class="table table-bordered" id="sec21-history">
+                            <div id="breakdown-his-table">
+                            <table class="table table-bordered" id="sec21-history"  style="max-height: 660px;">
                                 <thead class="thead-dark align-middle">
                                     <!-- table head -->
                                     <tr>
                                         <th scope="col" class="text-center">Breakdown Id</th>
+                                        <th scope="col">Issue</th>
                                         <th scope="col">Progress</th>
                                         <th scope="col"class="text-center">BreakDown Hours</th>
                                     </tr>
 
                                 </thead>
                                 <tbody>
-
-                                    <tr>
-                                 
-                                        <td class="text-center align-middle" ><h3>10</h3></td>
-                                        <td>
-                                            2024-05-15 12:55:26 :: repair service done but part replacement required<br>
-                                            2024-05-15 12:55:26 :: repair service done but part replacement required<br>
-                                            2024-05-15 12:55:26 :: repair service done but part replacement required<br>
-                                            2024-05-15 12:55:26 :: repair service done but part replacement required<br>
-
-                                        </td>
-                                        <td class="text-center align-middle">
-                                            <h2>56</h2>
-                                        </td>
-                                     
-                                    </tr>
-                                    <tr>
-                                 
-                                        <td class="text-center align-middle" ><h3>10</h3></td>
-                                        <td>
-                                            2024-05-15 12:55:26 :: repair service done but part replacement required<br>
-                                            2024-05-15 12:55:26 :: repair service done but part replacement required<br>
-                                            2024-05-15 12:55:26 :: repair service done but part replacement required<br>
-                                            2024-05-15 12:55:26 :: repair service done but part replacement required<br>
-
-                                        </td>
-                                        <td class="text-center align-middle">
-                                            <h2>56</h2>
-                                        </td>
-                                     
-                                    </tr>
-                                    <tr>
-                                 
-                                        <td class="text-center align-middle" ><h3>10</h3></td>
-                                        <td>
-                                            2024-05-15 12:55:26 :: repair service done but part replacement required<br>
-                                            2024-05-15 12:55:26 :: repair service done but part replacement required<br>
-                                            2024-05-15 12:55:26 :: repair service done but part replacement required<br>
-                                            2024-05-15 12:55:26 :: repair service done but part replacement required<br>
-
-                                        </td>
-                                        <td class="text-center align-middle">
-                                            <h2>56</h2>
-                                        </td>
-                                     
-                                    </tr>
-                                    <tr>
-                                 
-                                        <td class="text-center align-middle" ><h3>10</h3></td>
-                                        <td>
-                                            2024-05-15 12:55:26 :: repair service done but part replacement required<br>
-                                            2024-05-15 12:55:26 :: repair service done but part replacement required<br>
-                                            2024-05-15 12:55:26 :: repair service done but part replacement required<br>
-                                            2024-05-15 12:55:26 :: repair service done but part replacement required<br>
-
-                                        </td>
-                                        <td class="text-center align-middle">
-                                            <h2>56</h2>
-                                        </td>
-                                     
-                                    </tr>
-                                    <tr>
-                                 
-                                        <td class="text-center align-middle" ><h3>10</h3></td>
-                                        <td>
-                                            2024-05-15 12:55:26 :: repair service done but part replacement required<br>
-                                            2024-05-15 12:55:26 :: repair service done but part replacement required<br>
-                                            2024-05-15 12:55:26 :: repair service done but part replacement required<br>
-                                            2024-05-15 12:55:26 :: repair service done but part replacement required<br>
-
-                                        </td>
-                                        <td class="text-center align-middle">
-                                            <h2>56</h2>
-                                        </td>
-                                     
-                                    </tr>
-                                    <tr>
-                                 
-                                        <td class="text-center align-middle" ><h3>10</h3></td>
-                                        <td>
-                                            2024-05-15 12:55:26 :: repair service done but part replacement required<br>
-                                            2024-05-15 12:55:26 :: repair service done but part replacement required<br>
-                                            2024-05-15 12:55:26 :: repair service done but part replacement required<br>
-                                            2024-05-15 12:55:26 :: repair service done but part replacement required<br>
-
-                                        </td>
-                                        <td class="text-center align-middle">
-                                            <h2>56</h2>
-                                        </td>
-                                     
-                                    </tr>
-                                    
-
-
                                 </tbody>
                             </table>
+                            </div>
+                            
                         </div>
                     </div>
 
