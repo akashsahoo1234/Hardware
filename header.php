@@ -35,6 +35,11 @@
       top: 0;
       background-color: #fff;
     }
+    .center-both {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   </style>
   <link rel="icon" href="images/department-iconx.jpeg" type="image/x-icon">
   <title>EandT Department</title>

@@ -104,12 +104,15 @@ if (isset($_GET['key'])) {
                                     <a class="nav-link text-white bg-primary font-weight-bold dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="sec8"><span id="selectedValueReport">REPORT</span></a>
                                     <div class="dropdown-menu" aria-labelledby="sec8">
                                         <!-- Dropdown items -->
-                                        <a class="dropdown-item" href="#Section9" id="sec9">Installation Report</a>
-                                        <a class="dropdown-item" href="#Section20" id="sec20">Ipv4 Table</a>
-                                        <a class="dropdown-item" href="#Section21" id="sec21">Breakdown History</a>
-                                        <a class="dropdown-item" href="#Section22" id="sec22">Breakdown Report</a>
-                                        <a class="dropdown-item" href="#Section13" id="sec13">Availability Report</a>
-                                        <a class="dropdown-item" href="#Section14" id="sec14">Consumption Report</a>
+                                     
+<a class="dropdown-item" href="#Section9" id="sec9">Installation Report</a>
+<a class="dropdown-item" href="#Section20" id="sec20">Ipv4 Table</a>
+<a class="dropdown-item" href="#Section21" id="sec21">Breakdown History</a>
+<a class="dropdown-item" href="#Section22" id="sec22">Breakdown Report</a>
+<a class="dropdown-item" href="#Section13" id="sec13">Availability Report</a>
+<a class="dropdown-item" href="#Section24" id="sec24">Installed Machines</a>
+<a class="dropdown-item" href="#Section23" id="sec23">Acquire Report</a>
+
 
                                         <!-- Add more dropdown items as needed -->
                                     </div>
@@ -769,7 +772,144 @@ if (isset($_GET['key'])) {
                         </div>
                     </div>
                 </section>
+                <section id="Section21" class="mx-4 rounded shadow">
+                    <div class="row">
+                        <div class="col-md-3 bg-white p-3 rounded shadow " style="height:400px">
+                                <div class="form-group ">
+                                    <label for="sec21-sl">Enter Machine Sl.No :</label>
+                                    <input type="text" class="form-control" id="sec21-sl">
+                                </div>
+                                
+                                <button type="submit" class="btn btn-dark blacked mt-2" id="sec21-submit">Check</button>
+                                <div class="form-group mt-4">
+                                    <h3 class="text-danger">Breakdown Cases : 10</h3>
+                                    <h3 class="text-success">Breakdown Hours : 560</h3>
+                                </div>
+                        </div>
+                        
+                        <div class="col-md-8 bg-white p-3 rounded shadow mx-auto">
+                        <table class="table table-bordered" id="sec21-history">
+                                <thead class="thead-dark align-middle">
+                                    <!-- table head -->
+                                    <tr>
+                                        <th scope="col" class="text-center">Breakdown Id</th>
+                                        <th scope="col">Progress</th>
+                                        <th scope="col"class="text-center">BreakDown Hours</th>
+                                    </tr>
+
+                                </thead>
+                                <tbody>
+
+                                    <tr>
+                                 
+                                        <td class="text-center align-middle" ><h3>10</h3></td>
+                                        <td>
+                                            2024-05-15 12:55:26 :: repair service done but part replacement required<br>
+                                            2024-05-15 12:55:26 :: repair service done but part replacement required<br>
+                                            2024-05-15 12:55:26 :: repair service done but part replacement required<br>
+                                            2024-05-15 12:55:26 :: repair service done but part replacement required<br>
+
+                                        </td>
+                                        <td class="text-center align-middle">
+                                            <h2>56</h2>
+                                        </td>
+                                     
+                                    </tr>
+                                    <tr>
+                                 
+                                        <td class="text-center align-middle" ><h3>10</h3></td>
+                                        <td>
+                                            2024-05-15 12:55:26 :: repair service done but part replacement required<br>
+                                            2024-05-15 12:55:26 :: repair service done but part replacement required<br>
+                                            2024-05-15 12:55:26 :: repair service done but part replacement required<br>
+                                            2024-05-15 12:55:26 :: repair service done but part replacement required<br>
+
+                                        </td>
+                                        <td class="text-center align-middle">
+                                            <h2>56</h2>
+                                        </td>
+                                     
+                                    </tr>
+                                    <tr>
+                                 
+                                        <td class="text-center align-middle" ><h3>10</h3></td>
+                                        <td>
+                                            2024-05-15 12:55:26 :: repair service done but part replacement required<br>
+                                            2024-05-15 12:55:26 :: repair service done but part replacement required<br>
+                                            2024-05-15 12:55:26 :: repair service done but part replacement required<br>
+                                            2024-05-15 12:55:26 :: repair service done but part replacement required<br>
+
+                                        </td>
+                                        <td class="text-center align-middle">
+                                            <h2>56</h2>
+                                        </td>
+                                     
+                                    </tr>
+                                    <tr>
+                                 
+                                        <td class="text-center align-middle" ><h3>10</h3></td>
+                                        <td>
+                                            2024-05-15 12:55:26 :: repair service done but part replacement required<br>
+                                            2024-05-15 12:55:26 :: repair service done but part replacement required<br>
+                                            2024-05-15 12:55:26 :: repair service done but part replacement required<br>
+                                            2024-05-15 12:55:26 :: repair service done but part replacement required<br>
+
+                                        </td>
+                                        <td class="text-center align-middle">
+                                            <h2>56</h2>
+                                        </td>
+                                     
+                                    </tr>
+                                    <tr>
+                                 
+                                        <td class="text-center align-middle" ><h3>10</h3></td>
+                                        <td>
+                                            2024-05-15 12:55:26 :: repair service done but part replacement required<br>
+                                            2024-05-15 12:55:26 :: repair service done but part replacement required<br>
+                                            2024-05-15 12:55:26 :: repair service done but part replacement required<br>
+                                            2024-05-15 12:55:26 :: repair service done but part replacement required<br>
+
+                                        </td>
+                                        <td class="text-center align-middle">
+                                            <h2>56</h2>
+                                        </td>
+                                     
+                                    </tr>
+                                    <tr>
+                                 
+                                        <td class="text-center align-middle" ><h3>10</h3></td>
+                                        <td>
+                                            2024-05-15 12:55:26 :: repair service done but part replacement required<br>
+                                            2024-05-15 12:55:26 :: repair service done but part replacement required<br>
+                                            2024-05-15 12:55:26 :: repair service done but part replacement required<br>
+                                            2024-05-15 12:55:26 :: repair service done but part replacement required<br>
+
+                                        </td>
+                                        <td class="text-center align-middle">
+                                            <h2>56</h2>
+                                        </td>
+                                     
+                                    </tr>
+                                    
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </section>
+<section id="Section22" class="mx-4 rounded shadow">
+    <h1 class="text-white">Hello2</h1>
+</section>
+<section id="Section23" class="mx-4 rounded shadow">
+    <h1 class="text-white">Hello3</h1>
+</section>
+<section id="Section24" class="mx-4 rounded shadow">
+    <h1 class="text-white">Hello4</h1>
+</section>
             </div>
+
             <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                     <div class="modal-content">

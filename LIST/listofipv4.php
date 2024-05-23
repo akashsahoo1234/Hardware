@@ -2,9 +2,9 @@
 session_start();
 
 // Establish a database connection
-$dsn = 'mysql:host=localhost;dbname=eandt;charset=utf8mb4';
-$dbUsername = 'root';
-$dbPassword = '';
+$dsn = 'mysql:host=localhost;dbname=eandt;port=3307;charset=utf8mb4';
+$dbUsername = 'A95001601';
+$dbPassword = ']LndlFoSv@nocZnP';
 
 try {
     $pdo = new PDO($dsn, $dbUsername, $dbPassword);
@@ -35,6 +35,7 @@ try {
             subproduct s ON i.InS = s.SpId
         JOIN
             departments d ON i.InD = d.DmCode;
+            
        
     ";
 
