@@ -807,9 +807,42 @@ if (isset($_GET['key'])) {
                     </div>
 
                 </section>
-<section id="Section22" class="mx-4 rounded shadow">
-    <h1 class="text-white">Hello2</h1>
+<section id="Section22" class="rounded shadow">
+                        <div class="row">
+                        <div class="col-md-3 bg-white p-3 rounded shadow " style="height:300px">
+                                <div class="form-group ">
+                                    <label for="sec22-sdt">Enter Start Date</label>
+                                    <input type="date" class="form-control inputcap font-weight-bold" id="sec22-sdt">
+                                </div>
+
+                                <div class="form-group ">
+                                    <label for="sec22-edt">Enter End Date</label>
+                                    <input type="date" class="form-control inputcap font-weight-bold" id="sec22-edt">
+                                </div>
+                                
+                                <button type="submit" class="btn btn-dark blacked mt-2" id="sec22-submit">Check</button>
+                                     
+                        </div>
+                        <div class="col-md-8 bg-white p-3 rounded shadow mx-auto">
+                            <div id="breakdown-report-table">
+                            <table class="table table-bordered" id="sec21-history"  style="max-height: 660px;">
+                                <thead class="thead-dark align-middle">
+                                    <!-- table head -->
+                                    <tr>
+                                        <th scope="col" class="text-center">Uptime</th>
+                                        <th scope="col"class="text-center">BreakDown Percentage</th>
+                                    </tr>
+
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+                            </div>
+                            
+                        </div>
+</div>
 </section>
+
 <section id="Section23" class="mx-4 rounded shadow">
     <h1 class="text-white">Hello3</h1>
 </section>

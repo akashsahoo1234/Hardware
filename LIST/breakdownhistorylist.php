@@ -27,9 +27,8 @@ try {
         <!-- table head -->
         <tr>
             <th scope="col" class="text-center">Breakdown Id</th>
-            <th scope="col">Issue</th>
-            <th scope="col">Progress</th>
-            <th scope="col"class="text-center">BreakDown Hours</th>
+            <th scope="col">Uptime</th>
+            <th scope="col">Breakdown Percentage</th
         </tr>
 
     </thead>

@@ -994,6 +994,26 @@ $(document).ready(function () {
         });
 
     };
+    function Breakdownreportload(std, end) {
+        var url = 'LIST/breakdownreportload.php';
+        $.ajax({
+            url: url,
+            type: 'GET',
+            data: { std: std, end: end },
+            dataType: 'html',
+            success: function (data) {
+                var resultContainer = $('#breakdown-report-table');
+
+                resultContainer.empty();
+
+                resultContainer.append(data);
+            },
+            error: function () {
+                console.error('Error loading Breakdown data');
+            }
+        });
+
+    };
     $('#sec9-check').on('click', function (e) {
         e.preventDefault();
         ke = Key;
@@ -1043,6 +1063,31 @@ $(document).ready(function () {
             InformationLoad(slno, ke);
         }
     });
+    $(document).ready(function () {
+        $('#sec22-submit').on('click', function (e) {
+            e.preventDefault();
+            var std = $("#sec22-sdt").val();
+            var end = $("#sec22-edt").val();
+            var now = new Date().toISOString().slice(0, 10);
+
+            if (std == "" || end == "") {
+                alert("Please Enter a Start or End date to Proceed");
+
+            } else {
+                var startDate = new Date(std);
+                var endDate = new Date(end);
+
+                if (endDate > startDate && startDate <= new Date(now) && endDate <= new Date(now)) {
+                    Breakdownreportload(std, end);
+                    alert("Valid");
+                } else {
+                    alert("Invalid Date Selection");
+                }
+            }
+        });
+    });
+
+
     // Function to convert table data to CSV format
     function convertToCSV(table) {
         var csv = [];
